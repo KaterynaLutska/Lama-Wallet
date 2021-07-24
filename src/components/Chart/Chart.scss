@@ -1,0 +1,15 @@
+.doughnutSize {
+  height: 280px;
+  width: 280px;
+  margin-bottom: 30px;
+
+  @include for-size(tablet) {
+    height: 320px;
+    width: 320px;
+    margin-right: 35px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}

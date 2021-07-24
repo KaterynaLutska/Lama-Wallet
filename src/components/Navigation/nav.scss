@@ -1,0 +1,56 @@
+.NavigationDashbord {
+  margin-bottom: 28px;
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 12px;
+
+    width: 280px;
+  }
+
+  .NavLink {
+    display: flex;
+    align-items: center;
+
+    font-family: $secondary-font-family;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+
+    & + .NavLink {
+      margin-top: 10px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+
+    .NavLink.First {
+      margin-bottom: 10px;
+    }
+
+    .ImageNav {
+      width: 18px;
+      margin-right: 26px;
+
+      @media screen and (max-width: 767px) {
+        margin-right: 0;
+        width: 38px;
+      }
+    }
+  }
+
+  .NavLinkActive {
+    font-weight: 700;
+
+    filter: drop-shadow(0px 3px 10px rgba(74, 86, 226, 0.5));
+  }
+}

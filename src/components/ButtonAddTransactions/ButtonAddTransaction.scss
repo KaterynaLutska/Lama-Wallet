@@ -1,0 +1,20 @@
+.BtnAddTransaction {
+  position: fixed;
+  bottom: 36px;
+  right: 85px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #24cca7;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+
+  @media screen and (max-width: 767px) {
+    bottom: 28px;
+    right: 20px;
+  }
+}

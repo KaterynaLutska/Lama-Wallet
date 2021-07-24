@@ -1,0 +1,40 @@
+.titleStatistic {
+  font-family: $secondary-font-family;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.5;
+  color: $title-text-color;
+
+  margin-bottom: 10px;
+
+  @include for-size(tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.diagram-tab-container {
+  position: relative;
+
+  top: -12px;
+
+  padding-left: 30px;
+
+  transition: 1.5s;
+  animation: mainAnimation 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+
+  @media screen and (max-width: 1279px) {
+    top: 2px;
+
+    padding-left: 0;
+
+    animation: mobileAnimation 1s 1;
+  }
+}
+
+.diagrmTab {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}

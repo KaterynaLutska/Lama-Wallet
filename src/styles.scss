@@ -1,0 +1,30 @@
+@import './sass/utils/variables';
+@import './sass/utils/fonts';
+@import './sass/utils/mixins';
+@import './sass/base/common';
+
+// LOGIN PAGE
+@import './views/LoginPage/loginPage.scss';
+@import './components/loginForm/loginForm.scss';
+
+// REGISTER PAGE
+@import './views/RegistrationPage/registrationPage.scss';
+@import './components/RegistrationForm/RegistrationForm.scss';
+
+// DASHBOARD PAGE
+@import './views/DashboardPage/dashboardPage.scss';
+@import './components/Header/header.scss';
+@import './components/HomeTab/homeTab.scss';
+@import './components/Navigation/nav.scss';
+@import './components/Balance/balance.scss';
+@import './components/DiagramTab/diagramTab.scss';
+@import './components/Chart/chart.scss';
+@import './components/Table/table.scss';
+@import './components/ButtonAddTransactions/buttonAddTransaction.scss';
+@import './components/Currency/currency.scss';
+@import './components/ModalAddTransaction/modalAddTransaction.scss';
+
+// MINOR COMPONENTS
+@import './components/ModalLogout/modalLogout.scss';
+@import './components/Shared/Button/button.scss';
+@import './components/Shared/Modal/modal.scss';

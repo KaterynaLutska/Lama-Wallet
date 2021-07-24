@@ -1,0 +1,116 @@
+.login-page-bcgi {
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: cover;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('../../images/login-page-bcgi-768.png');
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../../images/login-page-bcgi.png');
+  }
+  .container {
+    padding-left: 76px;
+
+    @media screen and (max-width: 1279px) {
+      padding-left: 114px;
+      padding-right: 114px;
+      padding-bottom: 192px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.mainPage {
+  display: flex;
+
+  height: 100vh;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column;
+    background-size: cover;
+  }
+
+  .left {
+    width: 560px;
+
+    padding-top: 150px;
+    padding-right: 50px;
+
+    transition: 1.5s;
+    animation: left 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    @keyframes left {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 1279px) {
+      display: flex;
+      align-items: center;
+
+      padding-top: 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    .img {
+      width: 450px;
+      height: 410px;
+
+      @media screen and (max-width: 1279px) {
+        width: 274px;
+        height: 250px;
+
+        margin-right: 40px;
+      }
+    }
+
+    .title {
+      margin-top: 30px;
+
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+
+      color: $title-text-color;
+    }
+  }
+
+  .right {
+    padding-top: 136px;
+    padding-left: 95px;
+
+    transition: 1.5s;
+    animation: mainAnimation 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    @media screen and (max-width: 1279px) {
+      padding-top: 50px;
+      padding-left: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+body {
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+  overflow-x: hidden;
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  color: $title-text-color;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+
+  @include for-size(tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    padding-left: 85px;
+    padding-right: 85px;
+
+    width: 1280px;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden;
+}
+
+@keyframes mainAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(2%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mobileAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(2%);
+  }
+  100% {
+    opacity: 1;
+  }
+}

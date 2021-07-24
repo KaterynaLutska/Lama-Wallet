@@ -1,0 +1,73 @@
+.dashboard-bcgi {
+  background-color: #e7eaf2;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('../../images/dashboard-bcgi-768.png');
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../../images/dashboard-bcgi-1280.png');
+  }
+}
+
+.dashboradPage {
+  display: flex;
+
+  padding-top: 36px;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 1279px) {
+    display: block;
+
+    padding-top: 26px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 14px;
+  }
+
+  transition: 1.5s;
+  animation: dashboard 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+
+  @keyframes dashboard {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .nav-container {
+    padding-right: 26px;
+
+    @media screen and (max-width: 1279px) {
+      display: flex;
+
+      padding: 0;
+      margin-bottom: 26px;
+    }
+
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 28px;
+    }
+  }
+
+  .splitter {
+    @media screen and (min-width: 1280px) {
+      height: 100vh;
+
+      position: relative;
+      top: -36px;
+
+      border-right: 1px solid #e7e5f2;
+      box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05),
+        1px 0px 0px rgba(255, 255, 255, 0.6);
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff05;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.box {
+  width: 100px;
+  height: 100px;
+}
+.box-1 {
+  background-color: #24cca7;
+  animation: box-1 3000ms linear infinite;
+}
+.box-2 {
+  background-color: #4a56e2;
+  animation: box-2 3000ms linear infinite;
+}
+.box-3 {
+  background-color: #ff6596;
+  animation: box-3 3000ms linear infinite;
+}
+@keyframes box-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  8% {
+    transform: translate(0, 100px);
+  }
+  16% {
+    transform: translate(0, 100px);
+  }
+  25% {
+    transform: translate(0, 100px);
+  }
+  33% {
+    transform: translate(-100px, 100px);
+  }
+  41% {
+    transform: translate(-100px, 100px);
+  }
+  50% {
+    transform: translate(-100px, 100px);
+  }
+  58% {
+    transform: translate(-100px, 0);
+  }
+  66% {
+    transform: translate(-100px, 0);
+  }
+  75% {
+    transform: translate(-100px, 0);
+  }
+  83% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes box-1 {
+  8% {
+    transform: translate(0, 0);
+  }
+  16% {
+    transform: translate(100px, 0);
+  }
+  25% {
+    transform: translate(100px, 0);
+  }
+  33% {
+    transform: translate(100px, 0);
+  }
+  41% {
+    transform: translate(100px, 100px);
+  }
+  50% {
+    transform: translate(100px, 100px);
+  }
+  58% {
+    transform: translate(100px, 100px);
+  }
+  66% {
+    transform: translate(0px, 100px);
+  }
+  75% {
+    transform: translate(0, 100px);
+  }
+  83% {
+    transform: translate(0, 100px);
+  }
+  91% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes box-3 {
+  16% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -100px);
+  }
+  33% {
+    transform: translate(0, -100px);
+  }
+  41% {
+    transform: translate(0, -100px);
+  }
+  50% {
+    transform: translate(100px, -100px);
+  }
+  58% {
+    transform: translate(100px, -100px);
+  }
+  66% {
+    transform: translate(100px, -100px);
+  }
+  75% {
+    transform: translate(100px, 0);
+  }
+  83% {
+    transform: translate(100px, 0);
+  }
+  91% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

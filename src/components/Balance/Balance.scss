@@ -1,0 +1,77 @@
+.balanceContainer {
+  width: 280px;
+  padding-top: 8px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 1279px) {
+    width: 276px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 9px;
+
+    transition: 1.5s;
+    animation: mobileAnimation 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+
+  @include for-size(tablet) {
+    width: 340px;
+    padding-top: 8px;
+    padding-left: 40px;
+  }
+
+  @include for-size(desktop) {
+    width: 350px;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+
+    margin-bottom: 24px;
+  }
+
+  border-radius: 30px;
+  background-color: white;
+
+  .balanceTitle {
+    font-family: $primary-font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #a6a6a6;
+  }
+
+  .unicode {
+    font-size: 30px;
+    line-height: 45px;
+    color: black;
+  }
+
+  .balance {
+    margin-left: 5px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #000000;
+  }
+  // svg [Attributes Style]{
+  //   display: flexbox;
+  //   width: 80px;
+  //   margin-right: 213px;
+
+  // }
+}
+
+.loaderBalance {
+  margin-left: 100px;
+  @include for-size(tablet) {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}

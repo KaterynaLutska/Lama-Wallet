@@ -1,0 +1,121 @@
+.form {
+  width: 540px;
+
+  padding-right: 65px;
+  padding-left: 65px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: white;
+  border-radius: 20px;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+
+    padding-top: 110px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 20px;
+  }
+
+  .title {
+    font-family: $secondary-font-family;
+    display: inline;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    color: $title-text-color;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .MuiInputBase-input.MuiInputLabel-root {
+    width: 100%;
+  }
+
+  .MuiInputLabel-root {
+    font-family: $primary-font-family;
+    font-weight: 400;
+    font-size: 18px;
+    color: $secondary-text-color;
+    width: 100%;
+  }
+
+  .MuiSvgIcon-root {
+    color: $secondary-text-color;
+  }
+
+  .textField {
+    width: 100%;
+
+    margin-top: 26px;
+  }
+  .login-form-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 36px;
+  }
+
+  .btn-form {
+    width: 300px;
+    height: 50px;
+
+    margin-top: 20px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+
+    border: 1px solid $accent-color2;
+    border-radius: 20px;
+    background-color: white;
+
+    color: $accent-color2;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    transition: all $timing-function $transition-duration;
+
+    @media screen and (max-width: 767px) {
+      width: 280px;
+    }
+  }
+
+  .btn-form.MuiButton-root:hover {
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    color: white;
+  }
+
+  .MuiFormLabel-root.Mui-focused {
+    color: $accent-color;
+  }
+
+  .MuiInput-underline:after {
+    border-bottom: 2px solid $accent-color;
+  }
+
+  .current {
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    color: white;
+  }
+}

@@ -1,0 +1,29 @@
+.btnLogout {
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  .icon {
+    fill: $secondary-text-color;
+  }
+
+  .text {
+    display: none;
+
+    @include for-size(tablet) {
+      display: block;
+      font-family: $primary-font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.5;
+      color: $secondary-text-color;
+      margin-left: 10px;
+    }
+  }
+}

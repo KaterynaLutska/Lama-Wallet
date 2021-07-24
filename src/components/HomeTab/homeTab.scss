@@ -1,0 +1,245 @@
+.homeTab {
+  transition: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+
+  @include for-size(max-tablet) {
+    display: none;
+  }
+  @include for-size(tablet) {
+    animation: mobileAnimation 1s 1;
+  }
+  @include for-size(desktop) {
+    animation: mainAnimation 1s 1;
+
+    padding-left: 30px;
+  }
+}
+.paper .tableContainer {
+  @include for-size(tablet) {
+    width: 688px;
+    height: 320px;
+  }
+  @include for-size(desktop) {
+    width: 700px;
+    height: 550px;
+  }
+}
+.table {
+  .tableHeader {
+    background-color: $table-bg-color;
+
+    .rowHeader {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: $primary-font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 27px;
+      color: $title-text-color;
+    }
+
+    .rowHeader:first-child {
+      padding-left: 20px;
+      border-radius: 30px 0 0 30px;
+    }
+    .rowHeader:last-child {
+      padding-right: 40px;
+      border-radius: 0 30px 30px 0;
+      text-align: right;
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.row {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.row:not(:last-child) {
+  border-bottom: 1px solid $table-border-color;
+}
+.row .cellBody {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $title-text-color;
+}
+
+.row .cellBody:first-child {
+  padding-left: 20px;
+  width: 118px;
+}
+.row .cellBody:nth-last-child(-n + 2) {
+  padding-right: 35px;
+  text-align: right;
+}
+.row .type {
+  text-align: center;
+}
+.expenses .sum {
+  font-weight: bold;
+  color: $accent-color5;
+  text-align: center;
+}
+.income .sum {
+  font-weight: bold;
+  color: $accent-color;
+  text-align: center;
+}
+
+/* Mobile */
+
+.tableMobile {
+  width: 280px;
+  margin: 20px 0 20px;
+
+  @media screen and (max-width: 767px) {
+    transition: 1.5s;
+    animation: mobileAnimation 1s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+
+  .sectionMobile {
+    border-radius: 30px 30px 30px 30px;
+
+    .rowMobile {
+      display: flex;
+      justify-content: space-between;
+
+      background-color: $table-bg-color;
+
+      border-bottom: 1px solid $table-border-color;
+
+      font-family: $primary-font-family;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      color: $title-text-color;
+      padding: 12px 18px 5px 12px;
+
+      .cellValue {
+        font-family: $primary-font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: $title-text-color;
+      }
+    }
+    .rowMobile:first-child {
+      border-radius: 10px 10px 0px 0px;
+    }
+    .rowMobile:nth-last-child(-n + 2) {
+      border-radius: 0px 0px 10px 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .expensesM {
+    .rowMobile {
+      border-left: 5px solid $accent-color5;
+      .sum {
+        color: $accent-color5;
+      }
+    }
+  }
+  .incomeM {
+    .rowMobile {
+      border-left: 5px solid $accent-color;
+      .sum {
+        color: $accent-color;
+      }
+    }
+  }
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+/*delete button*/
+
+.row {
+  position: relative;
+  .deleteBtn {
+    position: absolute;
+    display: flex;
+    height: 100%;
+
+    right: 7px;
+    color: $secondary-text-color;
+    .deleteIcon {
+      padding-bottom: 2px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}
+
+.sectionMobile {
+  position: relative;
+  .deleteIconM {
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: -22px;
+  }
+}
+
+// for first visit
+
+.alpacaText {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  background-size: cover;
+
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+
+  filter: drop-shadow(0px 3px 10px rgba(74, 86, 226, 0.5));
+}
+
+.alpacaImg {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border-radius: 50px;
+  background-color: #ebeef8;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+
+  @include for-size(max-tablet) {
+    width: 250px;
+  }
+  @include for-size(tablet) {
+    width: 250px;
+  }
+  @include for-size(desktop) {
+    width: 350px;
+  }
+}
+
+.userName {
+  color: $accent-color;
+  font-size: 700;
+}
+
+.alpacaImg:hover {
+  transform: scale(1.05);
+}

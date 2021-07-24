@@ -1,0 +1,88 @@
+.header {
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 14px;
+      padding-bottom: 13px;
+    }
+  }
+
+  .logo,
+  .userInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    margin-left: 16px;
+
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.5;
+    color: $title-text-color;
+
+    @include for-size(tablet) {
+      margin: 0.67em 0em 0.67em 0.67em;
+      font-size: 30px;
+    }
+  }
+
+  .img {
+    width: 30px;
+    height: 30px;
+
+    @include for-size(tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .avatarUser {
+    display: none;
+
+    @include for-size(tablet) {
+      display: inherit;
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: italic;
+      background-color: $accent-color2;
+    }
+  }
+
+  .name {
+    margin-right: 10px;
+    margin-left: 5px;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $secondary-text-color;
+
+    @include for-size(tablet) {
+      margin-right: 15px;
+    }
+  }
+
+  .decor {
+    display: none;
+
+    @include for-size(tablet) {
+      display: block;
+      margin-right: 15px;
+      width: 0;
+      height: 30px;
+      border: 1px solid $secondary-text-color;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.tableFormStatistic {
+  // для мобилки
+  width: 280px;
+  padding-bottom: 20px;
+
+  @include for-size(tablet) {
+    // для планшета и для  десктоп
+    width: 350px;
+  }
+
+  .MuiTableCell-root {
+    font-family: $primary-font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $title-text-color;
+
+    align-items: baseline;
+    justify-content: center;
+    vertical-align: middle;
+
+    padding-top: 15px;
+    padding-right: 24px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+  }
+
+  .tableColorSpan {
+    display: flex;
+
+    align-items: center;
+  }
+
+  .tableHeadCell {
+    border-bottom: none;
+  }
+
+  .MuiTableHead-root {
+    display: table-caption;
+    background-color: #ffffff;
+
+    border-radius: 30px;
+  }
+
+  .MuiTableCell-head {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: start;
+    width: 75%;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .formControl {
+    // для мобилки
+    width: 280px;
+    height: 50px;
+
+    @include for-size(tablet) {
+      // для планшета и для  десктоп
+      width: 166px;
+    }
+  }
+
+  .formControl:not(:last-child) {
+    // для мобилки
+    margin-bottom: 20px;
+
+    @include for-size(tablet) {
+      // для планшета и для  десктоп
+      margin-right: 9px;
+    }
+  }
+
+  .MuiOutlinedInput-root {
+    border-radius: 30px;
+  }
+
+  .MuiOutlinedInput-input {
+    padding-top: 12px;
+    padding-right: 21px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+  }
+
+  .MuiInputBase-root {
+    font-family: $primary-font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $title-text-color;
+  }
+
+  .formControlEm {
+    font-style: normal;
+  }
+
+  .tableColorRow {
+    text-align: start;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .tableOption {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  .hiddenBorder {
+    border-bottom-style: hidden;
+  }
+
+  .tableValue {
+    font-weight: 700;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+
+  .tableConsumptionValue {
+    font-weight: 700;
+    color: rgba(255, 101, 150, 1);
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+
+  .tableIncomeValue {
+    font-weight: 700;
+    color: rgba(36, 204, 167, 1);
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+}
